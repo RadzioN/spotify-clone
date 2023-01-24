@@ -14,16 +14,16 @@ jobs:
         node-version: [16.x]
 
     steps:
-      - uses: actions/checkout@v3.3.0
+      - uses: actions/checkout@v2
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3.6.0
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: Cache node modules
         id: cache-nodemodules
-        uses: actions/cache@v3.2.3
+        uses: actions/cache@v2
         env:
           cache-name: cache-node-modules
         with:
@@ -42,7 +42,7 @@ jobs:
       - name: Build
         working-directory: /home/runner/work/spotify-clone/spotify-clone
         run: |
-          npm run build
+          npm run build:prod
       - name: Lint
         working-directory: /home/runner/work/spotify-clone/spotify-clone
         run: |
@@ -50,4 +50,4 @@ jobs:
       - name: Test
         working-directory: /home/runner/work/spotify-clone/spotify-clone
         run: |
-          npm run test
+          npm run test:headless
