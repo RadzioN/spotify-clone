@@ -42,7 +42,7 @@ jobs:
       - name: Build
         working-directory: /home/runner/work/spotify-clone/spotify-clone
         run: |
-          npm run build -- --prod
+          npm run build
       - name: Lint
         working-directory: /home/runner/work/spotify-clone/spotify-clone
         run: |
@@ -50,4 +50,4 @@ jobs:
       - name: Test
         working-directory: /home/runner/work/spotify-clone/spotify-clone
         run: |
-          npm run test -- --prod
+          npm run test
