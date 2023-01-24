@@ -50,4 +50,4 @@ jobs:
       - name: Test
         working-directory: /home/runner/work/spotify-clone/spotify-clone
         run: |
-          npm run test
+          npm run test -- --prod
