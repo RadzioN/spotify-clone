@@ -15,7 +15,7 @@ const routesNames = {
     },
 };
 
-export const RoutesConfig: any = {
+export const RoutesConfig = {
     basePaths,
     routesNames,
     routes: {
