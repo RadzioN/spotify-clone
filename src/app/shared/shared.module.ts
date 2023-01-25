@@ -13,10 +13,6 @@ import { MusicPlayerComponent, MusicPlayerMobileComponent, NavigationComponent, 
         DemoMaterialModule
     ],
     declarations: [
-        NavigationComponent,
-        SideNavigationComponent,
-        MusicPlayerComponent,
-        MusicPlayerMobileComponent,
     ],
     exports: [
         FormsModule,

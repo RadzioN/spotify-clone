@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IconsService } from './core/services';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'spotify-clone';
+
+  constructor(private iconsService: IconsService) {
+    this.iconsService.registerIcons();
+  }
+
 }
