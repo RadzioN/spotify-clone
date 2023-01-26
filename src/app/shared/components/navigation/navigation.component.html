@@ -3,18 +3,15 @@
         <img class="app-logo" src="assets/logos/spotify-logo-white.png" alt="Spotify logo">
         <div class="pages">
             <a routerLink="/main/home" routerLinkActive="active" class="menu-item" #home="routerLinkActive">
-                <mat-icon svgIcon="home" *ngIf="!home.isActive"></mat-icon>
-                <mat-icon svgIcon="home-filled" *ngIf="home.isActive"></mat-icon>
+                <mat-icon svgIcon="{{home.isActive ? 'home-filled' : 'home'}}"></mat-icon>
                 <span class="body-large">Home</span>
             </a>
             <a routerLink="/main/search" routerLinkActive="active" class="menu-item" #search="routerLinkActive">
-                <mat-icon svgIcon="search" *ngIf="!search.isActive"></mat-icon>
-                <mat-icon svgIcon="search-filled" *ngIf="search.isActive"></mat-icon>
+                <mat-icon svgIcon="{{search.isActive ? 'search-filled' : 'search'}}"></mat-icon>
                 <span class="body-large">Search</span>
             </a>
             <a routerLink="/main/library" routerLinkActive="active" class="menu-item" #library="routerLinkActive">
-                <mat-icon svgIcon="library" *ngIf="!library.isActive"></mat-icon>
-                <mat-icon svgIcon="library-filled" *ngIf="library.isActive"></mat-icon>
+                <mat-icon svgIcon="{{library.isActive ? 'library-filled' : 'library'}}"></mat-icon>
                 <span class="body-large">Your Library</span>
             </a>
         </div>

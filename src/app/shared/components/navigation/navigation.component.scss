@@ -5,6 +5,8 @@
     padding: 24px;
     box-sizing: border-box;
     user-select: none;
+    display: flex;
+    flex-direction: column;
 
     .menu {
         display: flex;
