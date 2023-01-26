@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class MusicPlayerMobileComponent {
 
-  isFavorite: boolean = false;
-  isPause: boolean = false;
+  isFavorite = false;
+  isPause = false;
 
   addToFavorite() {
     this.isFavorite = !this.isFavorite;
@@ -19,6 +19,6 @@ export class MusicPlayerMobileComponent {
   }
 
   openFullscreenPlayer() {
-
+    console.log("player opened");
   }
 }

@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class MusicPlayerComponent {
 
-  isFavorite: boolean = false;
-  isShuffle: boolean = false;
-  isRepeat: boolean = false;
-  isPause: boolean = false;
-  isLyrics: boolean = false;
-  isQueue: boolean = false;
+  isFavorite = false;
+  isShuffle = false;
+  isRepeat = false;
+  isPause = false;
+  isLyrics = false;
+  isQueue = false;
 
   addToFavorite() {
     this.isFavorite = !this.isFavorite;
