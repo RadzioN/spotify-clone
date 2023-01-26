@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FavoriteButtonComponent } from '..';
 import { SharedModule } from '../../shared.module';
 
 import { MusicPlayerMobileComponent } from './music-player-mobile.component';
@@ -12,7 +13,10 @@ describe('MusicPlayerMobileComponent', () => {
       imports: [
         SharedModule
       ],
-      declarations: [MusicPlayerMobileComponent]
+      declarations: [
+        FavoriteButtonComponent,
+        MusicPlayerMobileComponent
+      ]
     })
       .compileComponents();
 
