@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { MusicPlayerComponent, MusicPlayerMobileComponent, NavigationComponent, SharedModule, SideNavigationComponent } from './shared';
+import { MusicPlayerComponent, MusicPlayerMobileComponent, NavigationBarComponent, NavigationRailComponent, SharedModule } from './shared';
 
 import { AppComponent } from './app.component';
 import { MainModule } from './modules';
@@ -11,8 +11,8 @@ import { MainModule } from './modules';
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
-    SideNavigationComponent,
+    NavigationRailComponent,
+    NavigationBarComponent,
     MusicPlayerComponent,
     MusicPlayerMobileComponent,
   ],
