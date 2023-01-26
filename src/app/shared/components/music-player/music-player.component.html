@@ -1,1 +1,61 @@
-<p>music-player works!</p>
+<div class="player">
+    <div class="music-info">
+        <img class="album-cover" src="assets/logos/spotify-icon-green.png" alt="Album cover">
+        <div class="music-data">
+            <span class="body-medium">Przebój nocy</span>
+            <div class="artists-list">
+                <span class="label-large artist">PRO8L3M,</span>
+                <span class="label-large artist"> Wanda i Banda</span>
+            </div>
+        </div>
+        <a class="favorite-icon" matTooltip="Save to Your Library" matTooltipShowDelay="300">
+            <mat-icon svgIcon="favorite"></mat-icon>
+        </a>
+    </div>
+    <div class="music-controls">
+        <div class="app-controls">
+            <a class="control-item" matTooltip="Enable shuffle" matTooltipShowDelay="300">
+                <mat-icon svgIcon="shuffle"></mat-icon>
+            </a>
+            <a class="control-item" matTooltip="Previous" matTooltipShowDelay="300">
+                <mat-icon svgIcon="previous"></mat-icon>
+            </a>
+            <a class="control-item round-control" matTooltip="Pause" matTooltipShowDelay="300">
+                <mat-icon class="round-svg" svgIcon="pause"></mat-icon>
+            </a>
+            <a class="control-item" matTooltip="Next" matTooltipShowDelay="300">
+                <mat-icon svgIcon="next"></mat-icon>
+            </a>
+            <a class="control-item" matTooltip="Enable repeat" matTooltipShowDelay="300">
+                <mat-icon svgIcon="repeat"></mat-icon>
+            </a>
+        </div>
+        <div class="time-controls">
+            <span class="label-large">0:00</span>
+            <mat-slider class="time-control">
+                <input matSliderThumb>
+            </mat-slider>
+            <span class="label-large">3:59</span>
+        </div>
+    </div>
+    <div class="app-controls">
+        <a class="control-item" matTooltip="Lyrics" matTooltipShowDelay="300">
+            <mat-icon svgIcon="lyrics"></mat-icon>
+        </a>
+        <a class="control-item" matTooltip="Queue" matTooltipShowDelay="300">
+            <mat-icon svgIcon="queue"></mat-icon>
+        </a>
+        <a class="control-item" matTooltip="Connect to a device" matTooltipShowDelay="300">
+            <mat-icon svgIcon="desktop"></mat-icon>
+        </a>
+        <a class="control-item" matTooltip="Mute" matTooltipShowDelay="300">
+            <mat-icon svgIcon="speaker"></mat-icon>
+        </a>
+        <mat-slider class="volume-control">
+            <input matSliderThumb>
+        </mat-slider>
+        <a class="control-item" matTooltip="Full screen" matTooltipShowDelay="300">
+            <mat-icon svgIcon="fullscreen"></mat-icon>
+        </a>
+    </div>
+</div>

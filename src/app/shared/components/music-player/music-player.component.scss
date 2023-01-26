@@ -1,0 +1,131 @@
+.player {
+    position: absolute;
+    bottom: 0;
+
+    height: 90px;
+    width: 100%;
+    background-color: var(--dark);
+    border-top: 1px solid var(--ground);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    gap: 30px;
+    box-sizing: border-box;
+    user-select: none;
+
+    .music-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .album-cover {
+            width: 56px;
+            height: 56px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+
+        .music-data {
+            display: flex;
+            flex-direction: column;
+            margin-right: 16px;
+
+            span:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .artists-list {
+                color: var(--lighter);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: clip;
+
+                span:hover {
+                    color: var(--white);
+                }
+            }
+        }
+
+        .favorite-icon {
+            color: var(--lighter);
+
+            mat-icon {
+                width: 16px;
+                height: 16px;
+            }
+
+            &:hover {
+                color: var(--white);
+            }
+        }
+    }
+
+    .music-controls {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 2;
+        max-width: 500px;
+
+        .app-controls {
+            gap: 16px;
+        }
+
+        .time-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+
+            .time-control {
+                width: 100%;
+            }
+
+            span {
+                color: var(--lighter);
+            }
+        }
+    }
+
+    .app-controls {
+        display: flex;
+        align-items: center;
+
+        .control-item {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--lighter);
+
+            mat-icon {
+                width: 16px;
+                height: 16px;
+            }
+
+            &:hover {
+                cursor: default;
+                transform: scale(1.05);
+                color: var(--white);
+            }
+        }
+
+        .round-control {
+            background-color: var(--white);
+            border-radius: 50px;
+
+            .round-svg {
+                color: var(--black);
+            }
+        }
+
+        .volume-control {
+            width: 90px;
+        }
+    }
+}
