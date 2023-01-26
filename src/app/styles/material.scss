@@ -61,3 +61,13 @@
     letter-spacing: 0 !important;
     font-weight: 300 !important;
 }
+
+.music-mobile-progress {
+    .mdc-linear-progress__buffer-bar {
+        background-color: transparent !important;
+    }
+
+    .mdc-linear-progress__bar-inner {
+        border-color: var(--white) !important;
+    }
+}

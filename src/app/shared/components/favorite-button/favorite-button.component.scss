@@ -3,13 +3,33 @@
     position: relative;
     display: grid;
     place-content: center;
-    width: 40px;
-    height: 40px;
+    width: 16px;
+    height: 16px;
 
     mat-icon {
         width: 16px;
         height: 16px;
         z-index: 1;
+    }
+
+    &.medium {
+        width: 24px;
+        height: 24px;
+
+        mat-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &.big {
+        width: 36px;
+        height: 36px;
+
+        mat-icon {
+            width: 36px;
+            height: 36px;
+        }
     }
 
     &:not(.favorite):hover {
@@ -18,8 +38,10 @@
 
     .hearts {
         position: absolute;
-        width: 40px;
-        height: 40px;
+        height: 200%;
+        width: 200%;
+        left: -50%;
+        top: -50%;
         overflow: visible;
     }
 
@@ -39,8 +61,10 @@
             border-radius: 100%;
             position: absolute;
             outline: 5px solid var(--primary);
-            height: 40px;
-            width: 40px;
+            height: 200%;
+            width: 200%;
+            left: -50%;
+            top: -50%;
             animation: scalePulse 0.5s cubic-bezier(0.12, 0.84, 0.5, 0.44) forwards;
         }
 

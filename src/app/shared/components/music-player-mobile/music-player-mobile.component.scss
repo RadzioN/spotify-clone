@@ -1,0 +1,62 @@
+.player-mobile {
+    height: 56px;
+    border-radius: 6px;
+    background-color: var(--light);
+    margin: 0 8px;
+    padding: 8px;
+    box-sizing: border-box;
+    position: relative;
+
+    .player {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        user-select: none;
+
+        .music-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            .album-cover {
+                width: 40px;
+                height: 40px;
+                border-radius: 4px;
+            }
+
+            .music-data {
+                display: flex;
+                flex-direction: column;
+                margin-right: 16px;
+                line-height: 0px;
+
+                .artists-list {
+                    color: var(--lighter);
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: clip;
+                }
+            }
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-right: 8px;
+
+            .action-item {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .music-mobile-progress {
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 18px);
+        height: 2px;
+        border-radius: 4px;
+    }
+}

@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class FavoriteButtonComponent {
 
+  @Input() size: string = 'small';
   @Input() isFavorite: boolean = false;
   @Output() clickedFavorite = new EventEmitter();
 
