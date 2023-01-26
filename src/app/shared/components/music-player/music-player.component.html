@@ -8,25 +8,23 @@
                 <span class="label-large artist"> Wanda i Banda</span>
             </div>
         </div>
-        <a class="favorite-icon" matTooltip="Save to Your Library" matTooltipShowDelay="300">
-            <mat-icon svgIcon="favorite"></mat-icon>
-        </a>
+        <app-favorite-button (clickedFavorite)="addToFavorite()" [isFavorite]="isFavorite"></app-favorite-button>
     </div>
     <div class="music-controls">
         <div class="app-controls">
-            <a class="control-item" matTooltip="Enable shuffle" matTooltipShowDelay="300">
+            <a class="control-item" matTooltip="Enable shuffle" matTooltipShowDelay="300" [ngClass]="{'shuffle': isShuffle}" (click)="doShuffle()">
                 <mat-icon svgIcon="shuffle"></mat-icon>
             </a>
             <a class="control-item" matTooltip="Previous" matTooltipShowDelay="300">
                 <mat-icon svgIcon="previous"></mat-icon>
             </a>
-            <a class="control-item round-control" matTooltip="Pause" matTooltipShowDelay="300">
-                <mat-icon class="round-svg" svgIcon="pause"></mat-icon>
+            <a class="control-item round-control" matTooltip="Pause" matTooltipShowDelay="300" (click)="doPause()">
+                <mat-icon class="round-svg" svgIcon="{{isPause ? 'play' : 'pause'}}" [ngClass]="{'play': isPause}"></mat-icon>
             </a>
             <a class="control-item" matTooltip="Next" matTooltipShowDelay="300">
                 <mat-icon svgIcon="next"></mat-icon>
             </a>
-            <a class="control-item" matTooltip="Enable repeat" matTooltipShowDelay="300">
+            <a class="control-item" matTooltip="Enable repeat" matTooltipShowDelay="300" [ngClass]="{'repeat': isRepeat}" (click)="doRepeat()">
                 <mat-icon svgIcon="repeat"></mat-icon>
             </a>
         </div>
@@ -39,10 +37,10 @@
         </div>
     </div>
     <div class="app-controls">
-        <a class="control-item" matTooltip="Lyrics" matTooltipShowDelay="300">
+        <a class="control-item" matTooltip="Lyrics" matTooltipShowDelay="300" [ngClass]="{'lyrics': isLyrics}" (click)="openLyrics()">
             <mat-icon svgIcon="lyrics"></mat-icon>
         </a>
-        <a class="control-item" matTooltip="Queue" matTooltipShowDelay="300">
+        <a class="control-item" matTooltip="Queue" matTooltipShowDelay="300" [ngClass]="{'queue': isQueue}" (click)="openQueue()">
             <mat-icon svgIcon="queue"></mat-icon>
         </a>
         <a class="control-item" matTooltip="Connect to a device" matTooltipShowDelay="300">
