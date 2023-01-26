@@ -1,1 +1,14 @@
-<p>navigation-bar works!</p>
+<div class="navigation-bar">
+    <a routerLink="/main/home" routerLinkActive="active" class="bar-item" #home="routerLinkActive">
+        <mat-icon svgIcon="{{home.isActive ? 'home-filled' : 'home'}}"></mat-icon>
+        <span class="label-large">Home</span>
+    </a>
+    <a routerLink="/main/search" routerLinkActive="active" class="bar-item" #search="routerLinkActive">
+        <mat-icon svgIcon="{{search.isActive ? 'search-filled' : 'search'}}"></mat-icon>
+        <span class="label-large">Search</span>
+    </a>
+    <a routerLink="/main/library" routerLinkActive="active" class="bar-item" #library="routerLinkActive">
+        <mat-icon svgIcon="{{library.isActive ? 'library-filled' : 'library'}}"></mat-icon>
+        <span class="label-large">Your Library</span>
+    </a>
+</div>
