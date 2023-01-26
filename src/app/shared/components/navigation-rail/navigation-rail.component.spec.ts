@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { NavigationRailComponent } from './navigation-rail.component';
 
@@ -8,9 +9,12 @@ describe('NavigationRailComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavigationRailComponent ]
+      imports: [
+        RouterTestingModule
+      ],
+      declarations: [NavigationRailComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(NavigationRailComponent);
     component = fixture.componentInstance;
