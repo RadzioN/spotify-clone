@@ -2,7 +2,7 @@
     width: 250px;
     height: 100%;
     background-color: var(--black);
-    padding: 24px;
+    padding: 24px 24px 0 24px;
     box-sizing: border-box;
     user-select: none;
     display: flex;
@@ -21,11 +21,13 @@
 
     .playlists {
         overflow-y: auto;
+        margin-right: -24px;
+        padding-right: 8px;
     }
 
     hr {
         border: 1px solid var(--ground);
-        margin: 5px 0;
+        margin: 5px 0 0 0;
     }
 
     .menu-item {

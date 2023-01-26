@@ -17,4 +17,20 @@ body {
     font-family: 'Circular';
     background: var(--dark);
     color: var(--white);
+    -webkit-tap-highlight-color: transparent;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+    width: 16px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, .5);
 }
