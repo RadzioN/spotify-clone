@@ -1,1 +1,21 @@
-<p>music-player-mobile works!</p>
+<div class="player-mobile" (click)="openFullscreenPlayer()">
+    <div class="player">
+        <div class="music-info">
+            <img class="album-cover" src="assets/logos/spotify-icon-green.png" alt="Album cover">
+            <div class="music-data">
+                <span class="body-medium">Przebój nocy</span>
+                <div class="artists-list">
+                    <span class="label-large artist">PRO8L3M,</span>
+                    <span class="label-large artist"> Wanda i Banda</span>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <app-favorite-button (clickedFavorite)="addToFavorite()" [isFavorite]="isFavorite" size="medium"></app-favorite-button>
+            <a class="action-item" matTooltip="Pause" matTooltipShowDelay="300" (click)="doPause()">
+                <mat-icon class="round-svg" svgIcon="{{isPause ? 'play' : 'pause'}}" [ngClass]="{'play': isPause}"></mat-icon>
+            </a>
+        </div>
+    </div>
+    <mat-progress-bar mode="determinate" value="40" class="music-mobile-progress"></mat-progress-bar>
+</div>

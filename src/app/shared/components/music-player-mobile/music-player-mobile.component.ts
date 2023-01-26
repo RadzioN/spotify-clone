@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class MusicPlayerMobileComponent {
 
+  isFavorite = false;
+  isPause = false;
+
+  addToFavorite() {
+    this.isFavorite = !this.isFavorite;
+  }
+
+  doPause() {
+    this.isPause = !this.isPause;
+  }
+
+  openFullscreenPlayer() {
+    console.log("player opened");
+  }
 }

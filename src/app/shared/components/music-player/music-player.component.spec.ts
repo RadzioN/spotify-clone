@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FavoriteButtonComponent } from '..';
+import { SharedModule } from '../../shared.module';
 
 import { MusicPlayerComponent } from './music-player.component';
 
@@ -8,9 +10,15 @@ describe('MusicPlayerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MusicPlayerComponent ]
+      imports: [
+        SharedModule
+      ],
+      declarations: [
+        FavoriteButtonComponent,
+        MusicPlayerComponent
+      ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(MusicPlayerComponent);
     component = fixture.componentInstance;
