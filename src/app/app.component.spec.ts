@@ -4,6 +4,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { MatIconTestingModule } from '@angular/material/icon/testing';
 import { AppComponent } from './app.component';
 import { FavoriteButtonComponent, MusicPlayerComponent, MusicPlayerMobileComponent, NavigationBarComponent, NavigationRailComponent, SharedModule } from './shared';
+import { DomSanitizer } from '@angular/platform-browser';
+
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -11,7 +13,8 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         MatIconTestingModule,
-        SharedModule
+        SharedModule,
+        DomSanitizer
       ],
       declarations: [
         AppComponent,
