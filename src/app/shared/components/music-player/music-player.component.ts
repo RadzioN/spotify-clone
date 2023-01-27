@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { FsMusicPlayerComponent } from '../fs-music-player/fs-music-player.component';
 
 @Component({
   selector: 'app-music-player',
@@ -6,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./music-player.component.scss']
 })
 export class MusicPlayerComponent {
+
+  constructor(public dialog: MatDialog) { }
 
   isFavorite = false;
   isShuffle = false;
@@ -36,6 +40,14 @@ export class MusicPlayerComponent {
 
   openQueue() {
     this.isQueue = !this.isQueue;
+  }
+
+  openFullScreen() {
+    this.dialog.open(FsMusicPlayerComponent, {
+      disableClose: true,
+      closeOnNavigation: false,
+      panelClass: ['full-screen-modal']
+    })
   }
 
 }

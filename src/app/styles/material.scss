@@ -71,3 +71,42 @@
         border-color: var(--white) !important;
     }
 }
+
+.full-screen-modal {
+    max-width: unset !important;
+    width: 100%;
+    height: 100%;
+
+    .mat-mdc-dialog-container {
+        max-width: 100vw;
+        max-height: 100vh;
+        height: 100%;
+        width: 100%;
+
+        .mat-dialog-content {
+            max-height: unset !important;
+        }
+
+        .mat-mdc-dialog-surface {
+            border-radius: 0 !important;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .mat-mdc-slider {
+        .mdc-slider__thumb-knob {
+            height: 10px !important;
+            width: 10px !important;
+            display: block;
+        }
+
+        &:hover,
+        &:focus {
+            .mdc-slider__track--active_fill {
+                border-color: var(--white) !important;
+            }
+        }
+    }
+}

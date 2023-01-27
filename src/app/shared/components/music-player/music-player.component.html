@@ -8,7 +8,7 @@
                 <span class="label-large artist"> Wanda i Banda</span>
             </div>
         </div>
-        <app-favorite-button (clickedFavorite)="addToFavorite()" [isFavorite]="isFavorite"></app-favorite-button>
+        <app-favorite-button (clickedFavorite)="addToFavorite()" [isFavorite]="isFavorite" matTooltip="{{isFavorite ? 'Remove from Your Library' : 'Save to Your Library'}}" matTooltipShowDelay="300"></app-favorite-button>
     </div>
     <div class="music-controls">
         <div class="app-controls">
@@ -52,7 +52,7 @@
         <mat-slider class="volume-control">
             <input matSliderThumb>
         </mat-slider>
-        <a class="control-item" matTooltip="Full screen" matTooltipShowDelay="300">
+        <a class="control-item" matTooltip="Full screen" matTooltipShowDelay="300" (click)="openFullScreen()">
             <mat-icon svgIcon="fullscreen"></mat-icon>
         </a>
     </div>

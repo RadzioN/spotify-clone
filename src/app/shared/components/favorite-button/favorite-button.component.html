@@ -1,4 +1,4 @@
-<a class="favorite-icon" matTooltip="{{isFavorite ? 'Remove from Your Library' : 'Save to Your Library'}}" matTooltipShowDelay="300" [ngClass]="{'favorite': isFavorite, 'small': size === 'small', 'medium': size === 'medium', 'big': size === 'big'}">
+<a class="favorite-icon" [ngClass]="{'favorite': isFavorite, 'small': size === 'small', 'medium': size === 'medium', 'big': size === 'big'}">
     <mat-icon svgIcon="{{isFavorite ? 'favorite-filled' : 'favorite'}}" (click)="favorite()"></mat-icon>
     <svg class="hearts" viewBox="0 0 190 81" xmlns="http://www.w3.org/2000/svg">
         <g class="right-hearts">

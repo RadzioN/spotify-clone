@@ -1,4 +1,4 @@
-<div class="player-mobile" (click)="openFullscreenPlayer()">
+<div class="player-mobile" (click)="openFullScreen()">
     <div class="player">
         <div class="music-info">
             <img class="album-cover" src="assets/logos/spotify-icon-green.png" alt="Album cover">
@@ -10,7 +10,7 @@
                 </div>
             </div>
         </div>
-        <div class="actions">
+        <div class="actions" (click)="$event.stopPropagation()">
             <app-favorite-button (clickedFavorite)="addToFavorite()" [isFavorite]="isFavorite" size="medium"></app-favorite-button>
             <a class="action-item" matTooltip="Pause" matTooltipShowDelay="300" (click)="doPause()">
                 <mat-icon class="round-svg" svgIcon="{{isPause ? 'play' : 'pause'}}" [ngClass]="{'play': isPause}"></mat-icon>
