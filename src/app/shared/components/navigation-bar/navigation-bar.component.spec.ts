@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatIcon } from '@angular/material/icon';
+import { MatIconTestingModule } from '@angular/material/icon/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { SharedModule } from '../../shared.module';
 
@@ -12,10 +14,12 @@ describe('NavigationBarComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
-        SharedModule
+        SharedModule,
+        MatIconTestingModule
       ],
       declarations: [
-        NavigationBarComponent
+        NavigationBarComponent,
+        MatIcon
       ]
     })
       .compileComponents();
