@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { IconsService } from './core/services';
 
 @Component({
@@ -9,6 +10,9 @@ import { IconsService } from './core/services';
 export class AppComponent {
 
   constructor(private iconsService: IconsService) {
+  }
+
+  ngOnInit() {
     this.iconsService.registerIcons();
   }
 
