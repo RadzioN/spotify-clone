@@ -43,9 +43,4 @@ export class FsMusicPlayerComponent {
   openLyrics() {
     this.isLyrics = !this.isLyrics;
   }
-
-  closeFullScreen() {
-
-  }
-
 }

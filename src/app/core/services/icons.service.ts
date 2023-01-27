@@ -27,6 +27,10 @@ export class IconsService {
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/download.svg")
     );
     this.matIconRegistry.addSvgIcon(
+      "expand-down",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/expand-down.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
       "expand",
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/expand.svg")
     );
@@ -79,6 +83,10 @@ export class IconsService {
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/lyrics.svg")
     );
     this.matIconRegistry.addSvgIcon(
+      "more",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/more.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
       "next",
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/next.svg")
     );
@@ -117,6 +125,10 @@ export class IconsService {
     this.matIconRegistry.addSvgIcon(
       "search",
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/search.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      "share",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/share.svg")
     );
     this.matIconRegistry.addSvgIcon(
       "shuffle",

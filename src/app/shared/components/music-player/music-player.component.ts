@@ -45,6 +45,7 @@ export class MusicPlayerComponent {
   openFullScreen() {
     this.dialog.open(FsMusicPlayerComponent, {
       disableClose: true,
+      closeOnNavigation: false,
       panelClass: ['full-screen-modal']
     })
   }

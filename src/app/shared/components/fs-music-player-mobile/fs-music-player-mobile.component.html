@@ -1,1 +1,74 @@
-<p>fs-music-player-mobile works!</p>
+<div class="fs-player-mobile">
+    <div class="main">
+        <div class="top-actions">
+            <a class="control-item" mat-dialog-close>
+                <mat-icon svgIcon="expand-down"></mat-icon>
+            </a>
+            <span class="body-large title">PRO8L3M</span>
+            <a class="control-item" (click)="openMoreActions()">
+                <mat-icon svgIcon="more"></mat-icon>
+            </a>
+        </div>
+        <img class="album-cover" src="assets/logos/spotify-icon-green.png" alt="Album cover">
+        <div class="music-data">
+            <div class="data">
+                <span class="display-large">Przebój nocy</span>
+                <div class="artists-list">
+                    <span class="body-large artist">PRO8L3M,</span>
+                    <span class="body-large artist"> Wanda i Banda</span>
+                </div>
+            </div>
+            <app-favorite-button (clickedFavorite)="addToFavorite()" [isFavorite]="isFavorite" size="medium"></app-favorite-button>
+        </div>
+        <div class="time-controls">
+            <span class="body-small">0:00</span>
+            <mat-slider class="time-control">
+                <input matSliderThumb>
+            </mat-slider>
+            <span class="body-small">3:59</span>
+        </div>
+        <div class="music-controls">
+            <a class="control-item" [ngClass]="{'shuffle': isShuffle}" (click)="doShuffle()">
+                <mat-icon svgIcon="shuffle"></mat-icon>
+            </a>
+            <a class="control-item">
+                <mat-icon svgIcon="previous"></mat-icon>
+            </a>
+            <a class="control-item round-control" (click)="doPause()">
+                <mat-icon class="round-svg" svgIcon="{{isPause ? 'play' : 'pause'}}" [ngClass]="{'play': isPause}"></mat-icon>
+            </a>
+            <a class="control-item">
+                <mat-icon svgIcon="next"></mat-icon>
+            </a>
+            <a class="control-item" [ngClass]="{'repeat': isRepeat}" (click)="doRepeat()">
+                <mat-icon svgIcon="repeat"></mat-icon>
+            </a>
+        </div>
+        <div class="bottom-actions">
+            <a class="control-item">
+                <mat-icon svgIcon="desktop"></mat-icon>
+            </a>
+            <div class="side-actions">
+                <a class="control-item" (click)="openShare()">
+                    <mat-icon svgIcon="share"></mat-icon>
+                </a>
+                <a class="control-item" [ngClass]="{'queue': isQueue}" (click)="openQueue()">
+                    <mat-icon svgIcon="queue"></mat-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="lyrics">
+        <div class="bottom-actions">
+            <span class="body-large">Lyrics</span>
+            <div class="side-actions">
+                <a class="control-item small-round-control" (click)="openShare()">
+                    <mat-icon class="round-svg" svgIcon="share"></mat-icon>
+                </a>
+                <a class="control-item small-round-control" (click)="openLyrics()">
+                    <mat-icon class="round-svg" svgIcon="fullscreen"></mat-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

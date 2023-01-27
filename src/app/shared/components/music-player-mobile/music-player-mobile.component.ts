@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { FsMusicPlayerMobileComponent } from '..';
 
 @Component({
   selector: 'app-music-player-mobile',
@@ -6,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./music-player-mobile.component.scss']
 })
 export class MusicPlayerMobileComponent {
+
+  constructor(public dialog: MatDialog) { }
 
   isFavorite = false;
   isPause = false;
@@ -18,7 +22,11 @@ export class MusicPlayerMobileComponent {
     this.isPause = !this.isPause;
   }
 
-  openFullscreenPlayer() {
-    console.log("player opened");
+  openFullScreen() {
+    this.dialog.open(FsMusicPlayerMobileComponent, {
+      disableClose: true,
+      closeOnNavigation: false,
+      panelClass: ['full-screen-modal']
+    })
   }
 }
