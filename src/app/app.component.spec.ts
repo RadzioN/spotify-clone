@@ -14,7 +14,6 @@ describe('AppComponent', () => {
         RouterTestingModule,
         MatIconTestingModule,
         SharedModule,
-        DomSanitizer
       ],
       declarations: [
         AppComponent,
@@ -25,6 +24,14 @@ describe('AppComponent', () => {
         FavoriteButtonComponent,
         MatIcon
       ],
+      providers: [{
+        provide: DomSanitizer,
+        useValue: {
+          sanitize: () => 'safeString',
+          bypassSecurityTrustHtml: () => 'safeString'
+        }
+
+      }]
     }).compileComponents();
   });
 
