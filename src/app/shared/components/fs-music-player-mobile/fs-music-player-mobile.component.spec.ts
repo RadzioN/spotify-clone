@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialogModule, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconTestingModule } from '@angular/material/icon/testing';
 import { FavoriteButtonComponent, SharedModule } from '../..';
@@ -14,7 +14,8 @@ describe('FsMusicPlayerMobileComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         SharedModule,
-        MatIconTestingModule
+        MatIconTestingModule,
+        MatDialogModule,
       ],
       declarations: [
         FsMusicPlayerMobileComponent,
