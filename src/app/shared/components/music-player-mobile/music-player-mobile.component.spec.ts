@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatIcon } from '@angular/material/icon';
+import { MatIconTestingModule } from '@angular/material/icon/testing';
 import { FavoriteButtonComponent } from '..';
 import { SharedModule } from '../../shared.module';
 
@@ -11,11 +13,13 @@ describe('MusicPlayerMobileComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        SharedModule
+        SharedModule,
+        MatIconTestingModule
       ],
       declarations: [
         FavoriteButtonComponent,
-        MusicPlayerMobileComponent
+        MusicPlayerMobileComponent,
+        MatIcon
       ]
     })
       .compileComponents();
