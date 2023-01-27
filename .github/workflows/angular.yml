@@ -47,9 +47,3 @@ jobs:
         working-directory: /home/runner/work/spotify-clone/spotify-clone
         run: |
           npm run lint
-    """
-      - name: Test
-        working-directory: /home/runner/work/spotify-clone/spotify-clone
-        run: |
-          npm run test -- --watch=false --browsers=ChromeHeadless
-    """
