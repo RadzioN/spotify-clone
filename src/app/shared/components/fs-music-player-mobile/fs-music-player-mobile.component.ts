@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
@@ -6,7 +6,7 @@ import { MatDialogRef } from '@angular/material/dialog';
   templateUrl: './fs-music-player-mobile.component.html',
   styleUrls: ['./fs-music-player-mobile.component.scss']
 })
-export class FsMusicPlayerMobileComponent {
+export class FsMusicPlayerMobileComponent implements OnInit {
 
   constructor(private dialogRef: MatDialogRef<FsMusicPlayerMobileComponent>) { }
 
