@@ -1,6 +1,13 @@
-<!--<app-navigation-rail></app-navigation-rail>
-<app-navigation-bar></app-navigation-bar>
-<app-music-player></app-music-player>
-<app-music-player-mobile></app-music-player-mobile>-->
+<div class="app">
+    <div class="page">
+        <app-navigation-rail></app-navigation-rail>
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 
-<router-outlet></router-outlet>
+    <app-music-player-mobile></app-music-player-mobile>
+    <app-navigation-bar></app-navigation-bar>
+
+    <app-music-player></app-music-player>
+</div>
