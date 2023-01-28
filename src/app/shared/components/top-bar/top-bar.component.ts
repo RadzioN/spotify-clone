@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavigationEnd, Event, Router } from '@angular/router';
 
 @Component({
@@ -8,6 +8,7 @@ import { NavigationEnd, Event, Router } from '@angular/router';
 })
 export class TopBarComponent {
 
+  @Input() scrollTop: number = 0;
   isSearch = false;
   isLibrary = false;
 
@@ -27,5 +28,4 @@ export class TopBarComponent {
       }
     });
   }
-
 }

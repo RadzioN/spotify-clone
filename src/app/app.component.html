@@ -1,8 +1,8 @@
 <div class="app">
     <div class="page">
         <app-navigation-rail></app-navigation-rail>
-        <div class="content">
-            <app-top-bar></app-top-bar>
+        <div class="content" (scroll)="onScroll($event)">
+            <app-top-bar [scrollTop]="scrollTop"></app-top-bar>
             <router-outlet></router-outlet>
         </div>
     </div>
