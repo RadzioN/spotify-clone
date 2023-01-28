@@ -43,6 +43,35 @@
         .data {
             display: flex;
             flex-direction: column;
+            width: calc(100% - 30px);
+            overflow: hidden;
+
+            .title {
+                white-space: nowrap;
+                animation: scrollText 6s linear 3s infinite,
+            }
+
+            @keyframes scrollText {
+                0% {
+                    transform: translateX(0);
+                }
+
+                30% {
+                    transform: translateX(-150%);
+                    opacity: 0;
+                }
+
+                31% {
+                    transform: translateX(150%);
+                    opacity: 0;
+                }
+
+                60% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+
+            }
 
             .artists-list {
                 color: var(--lighter);
@@ -171,7 +200,7 @@
 @media only screen and (min-height: 850px) {
     .fs-player-mobile {
         gap: 24px;
-        
+
         .main {
             gap: 24px;
             height: 100%;

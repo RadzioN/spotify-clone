@@ -1,0 +1,14 @@
+{
+    "artists": [
+        {
+            "name": "PRO8L3M",
+            "cover": "assets/images/artists/pro8bl3m.png"
+        }
+    ],
+    "title": "Witamy, witamy, witamy",
+    "duration": "3:52",
+    "cover": "assets/images/tracks/witamy.png",
+    "background": "assets/images/bg-cover.png",
+    "color": "#585858"
+}
+

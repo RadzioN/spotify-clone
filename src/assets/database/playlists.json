@@ -1,0 +1,210 @@
+{
+    "playlists": [
+        {
+            "list": [
+                {
+                    "name": "PRO8L3M",
+                    "cover": "assets/images/pro8l3m.png",
+                    "color": ""
+                },
+                {
+                    "name": "Feelin' Myself",
+                    "cover": "assets/images/feelin-myself.png",
+                    "color": ""
+                },
+                {
+                    "name": "club2020",
+                    "cover": "assets/images/club2020.png",
+                    "color": ""
+                },
+                {
+                    "name": "INSTASAMKA",
+                    "cover": "assets/images/instasamka.png",
+                    "color": ""
+                },
+                {
+                    "name": "Mac Miller",
+                    "cover": "assets/images/mac-miller.png",
+                    "color": ""
+                }
+            ]
+        },
+        {
+            "name": "Recently played",
+            "list": [
+                {
+                    "name": "PRO8L3M",
+                    "cover": "assets/images/pro8l3m.png",
+                    "type": "artist"
+                },
+                {
+                    "name": "club2020",
+                    "cover": "assets/images/club2020.png",
+                    "type": "artist"
+                },
+                {
+                    "name": "Feelin' Myself",
+                    "cover": "assets/images/feelin-myself.png",
+                    "type": "playlist"
+                },
+                {
+                    "name": "Mac Miller",
+                    "cover": "assets/images/mac-miller.png",
+                    "type": "artist"
+                }
+            ]
+
+        },
+        {
+
+            "name": "New Music Friday!",
+            "list": [
+                {
+                    "name": "New Music Friday Poland",
+                    "cover": "assets/images/new-music-friday.png",
+                    "type": "playlist",
+                    "describe": "Everything, what is the best in your music. Cover: Rosalie"
+                },
+                {
+                    "name": "TOP POP",
+                    "cover": "assets/images/top-pop.png",
+                    "type": "playlist",
+                    "describe": "Hot news and hits from the world's pop stars. Cover: Sam Smith"
+                }
+            ]
+
+        },
+        {
+            "name": "Your top mixes",
+            "list": [
+                {
+                    "name": "Moody Mix",
+                    "cover": "assets/images/moody-mix.png",
+                    "type": "playlist",
+                    "describe": "d4vd, stickxr, Joji and more"
+                },
+                {
+                    "name": "Motivation mix",
+                    "cover": "assets/images/motivation-mix.png",
+                    "type": "playlist",
+                    "describe": "Uplifting and energetic music that helps you stay motivated."
+                },
+                {
+                    "name": "Release Radar",
+                    "cover": "assets/images/release-radar.png",
+                    "type": "playlist",
+                    "describe": "Catch all the latest music from artists you follow, plus new singles picked for you. Updates every Friday."
+                }
+            ]
+
+        },
+        {
+            "name": "More of what you like",
+            "list": [
+                {
+                    "name": "Today's Top Hits",
+                    "cover": "assets/images/todays-top-hits.png",
+                    "type": "playlist",
+                    "describe": "Sam Smith is on top of the Hottest 50!"
+                },
+                {
+                    "name": "teen beats",
+                    "cover": "assets/images/teen-beats.png",
+                    "type": "playlist",
+                    "describe": "I just need this love spiral!"
+                },
+                {
+                    "name": "Pop Rising",
+                    "cover": "assets/images/pop-rising.png",
+                    "type": "playlist",
+                    "describe": "The hits of tomorrow are on Spotify today. Cover: Ava Max"
+                },
+                {
+                    "name": "Viral Rap",
+                    "cover": "assets/images/viral-rap.png",
+                    "type": "playlist",
+                    "describe": "ona jest sylish, ona ma vibe'ik. Cover: club2020"
+                }
+            ]
+
+        },
+        {
+
+            "name": "music for gaming",
+            "list": [
+                {
+                    "name": "Top Gaming Tracks of 2022",
+                    "cover": "assets/images/top-gaming-tracks-of-2022.png",
+                    "type": "playlist",
+                    "describe": "Our editional picks for the best gaming tracks of the year. Cover: Lil Nas X #SpotifyWrapped"
+                },
+                {
+                    "name": "Top Gaming Tracks",
+                    "cover": "assets/images/top-gaming-tracks.png",
+                    "type": "playlist",
+                    "describe": "Press play, press start."
+                },
+                {
+                    "name": "Hip Hop Controller",
+                    "cover": "assets/images/hip-hop-controller.png",
+                    "type": "playlist",
+                    "describe": "Pass the sticks & press play."
+                },
+                {
+                    "name": "Power Gaming",
+                    "cover": "assets/images/power-gaming.png",
+                    "type": "playlist",
+                    "describe": "Get your gaming session going with epic rap mix."
+                }
+            ]
+        },
+        {
+
+            "name": "Hits of 2023",
+            "list": [
+                {
+                    "name": "just hits",
+                    "cover": "assets/images/just-hits.png",
+                    "type": "playlist",
+                    "describe": "Current favorites and exciting new music. Cover: Maneskin"
+                },
+                {
+                    "name": "Hit Dancefloor",
+                    "cover": "assets/images/hit-dancefloor.png",
+                    "type": "playlist",
+                    "describe": "The biggest dancefloor hits. Cover: VAMERO"
+                }
+            ]
+        },
+        {
+
+            "name": "Women in Hip-Hop",
+            "list": [
+                {
+                    "name": "Feelin' Myself",
+                    "cover": "assets/images/feelin-myself.png",
+                    "type": "playlist",
+                    "describe": "The hip-hop playlist that's a whole mood. Art By Laci Jordan; Cover: Flo Milli"
+                },
+                {
+                    "name": "Pressure",
+                    "cover": "assets/images/pressure.png",
+                    "type": "playlist",
+                    "describe": "Real Rap. All Pressure. Cover: Monaleo"
+                },
+                {
+                    "name": "This Is Nicki Minaj",
+                    "cover": "assets/images/this-is-nicki-minaj.png",
+                    "type": "playlist",
+                    "describe": "This Is Nicki Minaj. The essential tracks, all in one playlist."
+                },
+                {
+                    "name": "This Is Megan Thee Stallion",
+                    "cover": "assets/images/this-is-megan-thee-stallion.png",
+                    "type": "playlist",
+                    "describe": "This Is Megan Thee Stallion. The essential tracks, all in one playlist."
+                }
+            ]
+        }
+    ]
+}
