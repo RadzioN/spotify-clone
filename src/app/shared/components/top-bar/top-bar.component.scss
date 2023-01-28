@@ -1,0 +1,127 @@
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+    padding: 0 32px;
+    box-sizing: border-box;
+
+    .actions {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .app-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .page-action {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 16px;
+                background-color: rgba(0, 0, 0, .7);
+                cursor: pointer;
+
+                mat-icon {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        .search-bar {
+            width: 100%;
+            max-width: 400px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--white);
+            border-radius: 50px;
+            padding: 8px 12px;
+            box-sizing: border-box;
+            color: var(--black);
+            margin: 0 16px;
+
+            input {
+                outline: none;
+                width: 100%;
+                height: 100%;
+                border: none;
+                padding: 0;
+                font-size: 14px;
+            }
+        }
+
+        .tab-bar {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 0 40px;
+
+            .tab {
+                padding: 10px 16px;
+                border-radius: 4px;
+                cursor: pointer;
+
+                span {
+                    margin-bottom: -3px;
+                }
+            }
+
+            .active {
+                background-color: var(--ground);
+            }
+        }
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 25px;
+        height: 32px;
+        width: fit-content;
+        background-color: rgba(0, 0, 0, .7);
+        padding: 2px;
+        box-sizing: border-box;
+        user-select: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--ground);
+        }
+
+        .profile-photo {
+            width: 28px;
+            height: 28px;
+            border-radius: 14px;
+        }
+
+        span {
+            margin-bottom: -2px;
+            white-space: nowrap;
+        }
+
+        .profile-expand {
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+            color: var(--white);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+    .top-bar {
+        .tab:not(.active) {
+            display: none;
+        }
+    }
+}

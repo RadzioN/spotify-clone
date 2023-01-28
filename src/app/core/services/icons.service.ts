@@ -31,6 +31,10 @@ export class IconsService {
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/expand-down.svg")
     );
     this.matIconRegistry.addSvgIcon(
+      "expand-filled",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/expand-filled.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
       "expand",
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/expand.svg")
     );

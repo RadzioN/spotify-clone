@@ -1,0 +1,35 @@
+<div class="top-bar">
+    <div class="actions">
+        <div class="app-actions">
+            <a class="page-action" matTooltip="Go back" matTooltipShowDelay="300">
+                <mat-icon svgIcon="back"></mat-icon>
+            </a>
+            <a class="page-action" matTooltip="Go forward" matTooltipShowDelay="300">
+                <mat-icon svgIcon="prev"></mat-icon>
+            </a>
+        </div>
+        <div class="search-bar" *ngIf="isSearch">
+            <mat-icon svgIcon="search"></mat-icon>
+            <input type="text" placeholder="What do you want to listen to?">
+        </div>
+        <div class="tab-bar" *ngIf="isLibrary">
+            <div class="tab active">
+                <span class="body-large">Playlists</span>
+            </div>
+            <div class="tab">
+                <span class="body-large">Podcasts</span>
+            </div>
+            <div class="tab">
+                <span class="body-large">Artists</span>
+            </div>
+            <div class="tab">
+                <span class="body-large">Albums</span>
+            </div>
+        </div>
+    </div>
+    <div class="profile" matTooltip="User Name" matTooltipShowDelay="300">
+        <img class="profile-photo" src="assets/images/artists/pro8l3m.png" alt="User profile photo">
+        <span class="body-small">User Name</span>
+        <mat-icon class="profile-expand" svgIcon="expand-filled"></mat-icon>
+    </div>
+</div>
