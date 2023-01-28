@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
-import { DatabaseService } from 'src/app/core';
+import { DatabaseService, Track } from 'src/app/core';
 
 @Component({
   selector: 'app-fs-music-player-mobile',
@@ -10,7 +10,7 @@ import { DatabaseService } from 'src/app/core';
 })
 export class FsMusicPlayerMobileComponent implements OnInit {
 
-  track$: Observable<any>;
+  track$: Observable<Track>;
   isFavorite = false;
   isShuffle = false;
   isRepeat = false;

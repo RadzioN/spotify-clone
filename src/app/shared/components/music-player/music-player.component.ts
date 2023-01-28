@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
-import { DatabaseService } from 'src/app/core';
+import { DatabaseService, Track } from 'src/app/core';
 import { FsMusicPlayerComponent } from '../fs-music-player/fs-music-player.component';
 
 @Component({
@@ -11,7 +11,7 @@ import { FsMusicPlayerComponent } from '../fs-music-player/fs-music-player.compo
 })
 export class MusicPlayerComponent {
 
-  track$: Observable<any>;
+  track$: Observable<Track>;
   isFavorite = false;
   isShuffle = false;
   isRepeat = false;
