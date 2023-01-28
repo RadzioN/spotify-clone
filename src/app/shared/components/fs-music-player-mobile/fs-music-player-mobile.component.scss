@@ -43,6 +43,13 @@
         .data {
             display: flex;
             flex-direction: column;
+            width: calc(100% - 30px);
+
+            .title {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
 
             .artists-list {
                 color: var(--lighter);
@@ -171,7 +178,7 @@
 @media only screen and (min-height: 850px) {
     .fs-player-mobile {
         gap: 24px;
-        
+
         .main {
             gap: 24px;
             height: 100%;

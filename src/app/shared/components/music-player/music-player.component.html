@@ -1,11 +1,10 @@
-<div class="player">
+<div class="player" *ngIf="track$ | async as track">
     <div class="music-info">
-        <img class="album-cover" src="assets/logos/spotify-icon-green.png" alt="Album cover">
+        <img class="album-cover" src="{{track.cover}}" alt="Album cover">
         <div class="music-data">
-            <span class="body-medium">Przebój nocy</span>
-            <div class="artists-list">
-                <span class="label-large artist">PRO8L3M,</span>
-                <span class="label-large artist"> Wanda i Banda</span>
+            <span class="body-medium">{{track.title}}</span>
+            <div class="artists-list" *ngFor="let artist of track.artists">
+                <span class="label-large artist">{{artist.name}}</span>
             </div>
         </div>
         <app-favorite-button (clickedFavorite)="addToFavorite()" [isFavorite]="isFavorite" matTooltip="{{isFavorite ? 'Remove from Your Library' : 'Save to Your Library'}}" matTooltipShowDelay="300"></app-favorite-button>
@@ -33,7 +32,7 @@
             <mat-slider class="time-control">
                 <input matSliderThumb>
             </mat-slider>
-            <span class="label-large">3:59</span>
+            <span class="label-large">{{track.duration}}</span>
         </div>
     </div>
     <div class="app-controls">

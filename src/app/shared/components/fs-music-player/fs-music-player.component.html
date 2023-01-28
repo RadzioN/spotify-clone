@@ -1,10 +1,10 @@
-<div class="fs-player">
+<div class="fs-player" *ngIf="track$ | async as track">
     <div class="top-info">
         <div class="logotype">
             <img class="app-logo" src="assets/logos/spotify-icon-white.png" alt="Spotify logo">
             <span class="body-small">Playing from artist</span>
         </div>
-        <div class="up-next">
+        <div class="up-next" *ngIf="isNext">
             <img class="album-cover" src="assets/logos/spotify-icon-green.png" alt="Album cover">
             <div class="data">
                 <span class="body-small action-name">Up next</span>
@@ -14,12 +14,11 @@
     </div>
     <div class="player">
         <div class="music-info">
-            <img class="album-cover" src="assets/logos/spotify-icon-green.png" alt="Album cover">
+            <img class="album-cover" src="{{track.cover}}" alt="Album cover">
             <div class="music-data">
-                <span class="display-large">Przebój nocy</span>
-                <div class="artists-list">
-                    <span class="body-large artist">PRO8L3M,</span>
-                    <span class="body-large artist"> Wanda i Banda</span>
+                <span class="display-large">{{track.title}}</span>
+                <div class="artists-list" *ngFor="let artist of track.artists">
+                    <span class="body-large artist">{{artist.name}}</span>
                 </div>
             </div>
         </div>
@@ -28,7 +27,7 @@
             <mat-slider class="time-control">
                 <input matSliderThumb>
             </mat-slider>
-            <span class="body-small">3:59</span>
+            <span class="body-small">{{track.duration}}</span>
         </div>
         <div class="actions-bar">
             <app-favorite-button (clickedFavorite)="addToFavorite()" [isFavorite]="isFavorite" size="medium"></app-favorite-button>

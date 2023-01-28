@@ -1,12 +1,11 @@
-<div class="player-mobile" (click)="openFullScreen()">
+<div class="player-mobile" (click)="openFullScreen()" *ngIf="track$ | async as track">
     <div class="player">
         <div class="music-info">
-            <img class="album-cover" src="assets/logos/spotify-icon-green.png" alt="Album cover">
+            <img class="album-cover" src="{{track.cover}}" alt="Album cover">
             <div class="music-data">
-                <span class="body-medium">Przebój nocy</span>
-                <div class="artists-list">
-                    <span class="label-large artist">PRO8L3M,</span>
-                    <span class="label-large artist"> Wanda i Banda</span>
+                <span class="body-medium">{{track.title}}</span>
+                <div class="artists-list" *ngFor="let artist of track.artists">
+                    <span class="label-large artist">{{artist.name}}</span>
                 </div>
             </div>
         </div>

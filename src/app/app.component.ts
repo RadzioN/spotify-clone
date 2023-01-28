@@ -11,5 +11,4 @@ export class AppComponent {
   constructor(private iconsService: IconsService) {
     this.iconsService.registerIcons();
   }
-
 }

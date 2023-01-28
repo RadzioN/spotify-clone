@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { Observable } from 'rxjs';
+import { DatabaseService } from 'src/app/core';
 
 @Component({
   selector: 'app-fs-music-player-mobile',
@@ -8,8 +10,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class FsMusicPlayerMobileComponent implements OnInit {
 
-  constructor(private dialogRef: MatDialogRef<FsMusicPlayerMobileComponent>) { }
-
+  track$: Observable<any>;
   isFavorite = false;
   isShuffle = false;
   isRepeat = false;
@@ -17,6 +18,9 @@ export class FsMusicPlayerMobileComponent implements OnInit {
   isLyrics = false;
   isQueue = false;
 
+  constructor(private dialogRef: MatDialogRef<FsMusicPlayerMobileComponent>, private dbs: DatabaseService) {
+    this.track$ = this.dbs.getTrack();
+  }
 
   ngOnInit() {
     this.dialogRef.keydownEvents().subscribe(event => {
