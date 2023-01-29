@@ -1,1 +1,13 @@
-<p>card works!</p>
+<div class="card">
+    <div class="cover liked">
+        <img class="data-cover artist" src="assets/images/playlists/viral-rap.png" alt="Playlist cover" *ngIf="!isLiked">
+        <mat-icon class="favorite" svgIcon="favorite-filled" *ngIf="isLiked"></mat-icon>
+        <a class="round-control">
+            <mat-icon svgIcon="play"></mat-icon>
+        </a>
+    </div>
+    <div class="data">
+        <span class="display-small">viral rap</span>
+        <span class="body-medium describe">ona jest stylish, ona ma vibe'i kona jest stylish, ona ma vibe'ik</span>
+    </div>
+</div>
