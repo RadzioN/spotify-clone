@@ -6,7 +6,7 @@
 
     .page {
         display: flex;
-        height: 100%;
+        height: calc(100% - 90px);
 
         .content {
             width: 100%;
@@ -37,18 +37,17 @@
             }
         }
 
-        app-music-player-mobile {
-            display: block;
+        .mobile-bar {
+            height: 126px;
             position: absolute;
             width: 100%;
-            bottom: 70px;
+            bottom: 0;
+            background-image: linear-gradient(transparent, rgba(black, .95),var(--black));
         }
 
+        app-music-player-mobile,
         app-navigation-bar {
             display: block;
-            position: absolute;
-            width: 100%;
-            bottom: 0px;
         }
 
         app-music-player {
