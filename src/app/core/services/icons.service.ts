@@ -131,6 +131,10 @@ export class IconsService {
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/search.svg")
     );
     this.matIconRegistry.addSvgIcon(
+      "settings",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/settings.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
       "share",
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/share.svg")
     );

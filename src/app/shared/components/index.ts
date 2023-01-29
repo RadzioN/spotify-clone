@@ -6,3 +6,4 @@ export * from './favorite-button/favorite-button.component';
 export * from './fs-music-player/fs-music-player.component';
 export * from './fs-music-player-mobile/fs-music-player-mobile.component';
 export * from './top-bar/top-bar.component';
+export * from './top-bar-mobile/top-bar-mobile.component';

@@ -1,0 +1,46 @@
+<div class="top-bar-mobile" [ngClass]="{'library': isLibrary}">
+    <div class="main">
+        <div class="left">
+            <img class="profile-photo" src="assets/images/artists/pro8l3m.png" alt="User profile photo" *ngIf="isLibrary">
+            <span class="display-medium" *ngIf="!isSearch && !isLibrary">{{goodTime}}</span>
+            <span class="display-medium" *ngIf="isSearch">Search</span>
+            <span class="display-medium" *ngIf="isLibrary">Your Library</span>
+        </div>
+        <div class="actions-app" *ngIf="!isSearch">
+            <a class="control-item" *ngIf="!isSearch && !isLibrary">
+                <mat-icon svgIcon="settings"></mat-icon>
+            </a>
+            <a class="control-item" *ngIf="isLibrary">
+                <mat-icon svgIcon="search"></mat-icon>
+            </a>
+            <a class="control-item" *ngIf="isLibrary">
+                <mat-icon svgIcon="add"></mat-icon>
+            </a>
+        </div>
+    </div>
+    <div class="action">
+        <div class="tab-bar" *ngIf="!isSearch && !isLibrary">
+            <div class="tab filled">
+                <span class="label-large">Music</span>
+            </div>
+            <div class="tab filled">
+                <span class="label-large">Podcasts and programs</span>
+            </div>
+        </div>
+        <div class="search-bar" (click)="search.focus()" *ngIf="isSearch">
+            <mat-icon svgIcon="search"></mat-icon>
+            <input type="text" placeholder="What do you want to listen to?" #search>
+        </div>
+        <div class="tab-bar" *ngIf="isLibrary">
+            <div class="tab outlined">
+                <span class="label-large">Playlists</span>
+            </div>
+            <div class="tab outlined">
+                <span class="label-large">Artists</span>
+            </div>
+            <div class="tab outlined">
+                <span class="label-large">Albums</span>
+            </div>
+        </div>
+    </div>
+</div>

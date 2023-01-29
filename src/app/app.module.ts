@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { FavoriteButtonComponent, FsMusicPlayerComponent, FsMusicPlayerMobileComponent, MusicPlayerComponent, MusicPlayerMobileComponent, NavigationBarComponent, NavigationRailComponent, SharedModule, TopBarComponent } from './shared';
+import { FavoriteButtonComponent, FsMusicPlayerComponent, FsMusicPlayerMobileComponent, MusicPlayerComponent, MusicPlayerMobileComponent, NavigationBarComponent, NavigationRailComponent, SharedModule, TopBarComponent, TopBarMobileComponent } from './shared';
 
 import { AppComponent } from './app.component';
 import { MainModule } from './modules';
@@ -18,7 +18,8 @@ import { MainModule } from './modules';
     FavoriteButtonComponent,
     FsMusicPlayerComponent,
     FsMusicPlayerMobileComponent,
-    TopBarComponent
+    TopBarComponent,
+    TopBarMobileComponent
   ],
   imports: [
     BrowserModule,

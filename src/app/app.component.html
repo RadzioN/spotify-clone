@@ -3,6 +3,7 @@
         <app-navigation-rail></app-navigation-rail>
         <div class="content" (scroll)="onScroll($event)">
             <app-top-bar [scrollTop]="scrollTop"></app-top-bar>
+            <app-top-bar-mobile></app-top-bar-mobile>
             <router-outlet></router-outlet>
         </div>
     </div>

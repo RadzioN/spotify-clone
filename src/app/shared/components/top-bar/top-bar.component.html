@@ -8,9 +8,9 @@
                 <mat-icon svgIcon="prev"></mat-icon>
             </a>
         </div>
-        <div class="search-bar" *ngIf="isSearch">
+        <div class="search-bar" *ngIf="isSearch" (click)="search.focus()">
             <mat-icon svgIcon="search"></mat-icon>
-            <input type="text" placeholder="What do you want to listen to?">
+            <input type="text" placeholder="What do you want to listen to?" autofocus #search>
         </div>
         <div class="tab-bar" *ngIf="isLibrary">
             <div class="tab active">
