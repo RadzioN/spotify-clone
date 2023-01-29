@@ -1,1 +1,10 @@
-<p>s-card works!</p>
+<div class="s-card">
+    <div class="cover liked">
+        <img class="data-cover artist" src="assets/images/playlists/viral-rap.png" alt="Playlist cover" *ngIf="!isLiked">
+        <mat-icon class="favorite" svgIcon="favorite-filled" *ngIf="isLiked"></mat-icon>
+    </div>
+    <span class="display-small">viral rap</span>
+    <a class="round-control">
+        <mat-icon svgIcon="play"></mat-icon>
+    </a>
+</div>

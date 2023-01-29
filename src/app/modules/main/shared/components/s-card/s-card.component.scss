@@ -1,0 +1,72 @@
+.s-card {
+    position: relative;
+    width: 415px;
+    height: 80px;
+    background-color: rgba(white, .1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+        .round-control {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .cover {
+        .data-cover,
+        &.liked {
+            width: 80px;
+            height: 80px;
+            box-shadow: 0 8px 24px rgba(black, .5);
+        }
+
+        &.liked {
+            background-image: linear-gradient(145deg, rgba(63, 19, 185), rgba(123, 143, 137));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .favorite {
+                color: var(--white);
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+    }
+
+    .round-control {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 16px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: var(--primary);
+        box-shadow: 0 8px 8px rgba(black, .3);
+        color: var(--black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        cursor: default;
+        transition: .5s;
+        transform: translateY(16px);
+
+        mat-icon {
+            margin-left: 3px;
+            width: 18px;
+            height: 18px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
